@@ -30,6 +30,33 @@ This is zonally redudant storage and is durable across zone failures. This will 
 #### Geo
 This is read accessible geo-redundant storage and is available even in the event of a regional failure. This is the highest level of protection and is denoted by a "success" icon.
 
+### Zone Redundant HA
+This is checking if one of the nodes of your SQL Azure Database is deployed to another zone. 
+
+#### Warning Icon
+When the warning icon is displayed Zone Redundancy is disabled and your database is succeptible to zonal failures.
+
+#### Success Icon
+When the success icon is displayed Zone Redundancy is enabled and your database is protected from zonal failures.
+
+### Failover Group Enabled
+This is checking if your SQL Azure Database is part of a Failover Group.
+
+#### Warning Icon
+When the warning icon is displayed if your database is not protected by a failover group and your database cannot be failed over during a regional failure.
+
+#### Success Icon
+When the success icon is displayed if your database is protected by a failover group and your database can be failed over during a regional failure.
+
+### DB Is a Geo Replica
+This checks if the database is a Geo Secondary replica or a primary database
+
+#### Primary
+This denotes the database is a single database without a replica or is the primary in a GeoDR group.
+
+#### Geo Secondary
+This denotes the database is a geo-replica secondary in a GeoDR group.
+
 ## SQL Managed Instance
 
 ## Cosmos DB
