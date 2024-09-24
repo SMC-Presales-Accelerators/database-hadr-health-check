@@ -59,4 +59,34 @@ This denotes the database is a geo-replica secondary in a GeoDR group.
 
 ## SQL Managed Instance
 
+### Backup Redundancy
+This is checking the backup redundancy setting of your Point in Time Recovery backups. Valid values are Local, Zone, and Geo. 
+
+#### Local
+This is locally redundant storage and it the least durable. As such we give this a "critical" icon.
+
+#### Zone
+This is zonally redudant storage and is durable across zone failures. This will protect you in zone level issues but will still fail in a regional outage. As such we give this a "warning" icon.
+
+#### Geo
+This is read accessible geo-redundant storage and is available even in the event of a regional failure. This is the highest level of protection and is denoted by a "success" icon.
+
+### Zone Redundant HA
+This is checking if one of the nodes of your SQL Managed Instance is deployed to another zone. 
+
+#### Warning Icon
+When the warning icon is displayed Zone Redundancy is disabled and your managed instance is succeptible to zonal failures.
+
+#### Success Icon
+When the success icon is displayed Zone Redundancy is enabled and your managed instance is protected from zonal failures.
+
+### Failover Group Enabled
+This is checking if your SQL Managed Instance is part of an Auto Failover Group.
+
+#### Warning Icon
+When the warning icon is displayed if your managed instance is not protected by a failover group and your managed instance cannot be failed over during a regional failure.
+
+#### Success Icon
+When the success icon is displayed if your managed instance is protected by a failover group and your managed instance can be failed over during a regional failure.
+
 ## Cosmos DB
