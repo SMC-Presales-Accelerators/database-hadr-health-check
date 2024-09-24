@@ -90,3 +90,50 @@ When the warning icon is displayed if your managed instance is not protected by 
 When the success icon is displayed if your managed instance is protected by a failover group and your managed instance can be failed over during a regional failure.
 
 ## Cosmos DB
+
+### Backup Policy
+This checks the backup policy of your Cosmos Database. Valid values are Periodic or Continuous.
+
+#### Periodic
+Periodic backups are taken based on a specific set rate. As this has large RPO implications we indicate this with the warning icon.
+
+#### Continuous
+Continuous backups are taken as changes are made and therefore have a very low RPO. As such we display the success icon.
+
+### Backup Policy Health
+This checks your individual backup settings and provides a health indicator depending on the level of risk. Valid values are Critical, Warning, and Healthy
+
+#### Critical
+This will only show if you are running periodic backups with a backup interval greater than 60 minutes or are not using geo replicated backups.
+
+#### Warning
+If you are running continuous backups, this will display if you are using the 7 day backup retention policy.
+
+If you are running periodic backups, this will display if your backup interval is 60 minutes or less and you have geo replicated backups.
+
+#### Healthy
+This will only show if you have 30 day continuous backups.
+
+### Total Regions
+This is the count of total regions your Cosmos DB is currently available in. We will show the warning icon if you only have one region and the success icon if you have more than 1 region.
+
+### Read Regions
+This is the count of readable regions your Cosmos DB is currently available in. We will show the warning icon if you only have one region and the success icon if you have more than 1 region.
+
+### Write Regions
+This is the count of writable regions your Cosmos DB is currently available in. We will show the warning icon if you only have one region and the success icon if you have more than 1 region.
+
+### Zone Redundancy Health
+This checks your zone redundancy settings for all your regions. Valid values are None, Some, and All.
+
+#### None
+This displays if none of your regions are configured for zone redundancy. We use the warning icon to indicate you do not have any zone redundancy.
+
+#### Some
+This displays if some of your regions are configured for zone redundancy. We use the warning icon to indicate that your zonal coverage is inconsistent.
+
+#### All
+This displays if all of your regions are configured for zone redundancy. We use the success icon to indicate you are fully covered in the event of a zonal outage.
+
+### Consistency Level
+This is your default consistency level and is shown as it can have implications around how your data is stored and what data is available in other regions during an outage. This column also links to the [Cosmos DB Consistency Levels article](https://learn.microsoft.com/en-us/azure/cosmos-db/consistency-levels). 
