@@ -6,6 +6,17 @@ their High Availability and Disaster Recovery settings.
 Utilize the resulting information to make informed decisions on your data service
 configurations that best align with your organizations SLA goals.
 
+### Example Outputs
+
+**Azure SQL Database**
+![Azure SQL Database](./images/health_check_sql_example.png)
+
+**Azure SQL Managed Instance**
+![Azure SQL Managed Instance](./images/health_check_sqlmi_example.png)
+
+**Azure Cosmos DB**
+![Azure Cosmos DB](./images/health_check_cosmosdb_example.png)
+
 ## Deployment
 Click the button below to deploy to your Azure Subscription:
 
