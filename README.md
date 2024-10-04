@@ -1,10 +1,10 @@
 # Azure Database HA/DR Health Check
 
-This workbook give an overview of your Azure Data services and provides a 
-quick overview of their High Availability and Disaster Recovery settings. 
+This workbook provides an overview of your Azure Data services, summarizing 
+their High Availability and Disaster Recovery settings. 
 
-With this information you can make an informed decision on what you need to 
-change to best achieve your SLA goals at your organization.
+Utilize the resulting information to make informed decisions on your data service
+configurations that best align with your organizations SLA goals.
 
 ## Deployment
 Click the button below to deploy to your Azure Subscription:
