@@ -11,6 +11,14 @@ This document explains the logic behind each icon and how the information was de
 
 [Cosmos DB](#cosmos-db)
 
+## Icons
+
+![Healthy](/images/healthy_icon_32px.png)  **Healthy**: Indicating the specific setting for the service is considered in a best practice state offering the most availability and resiliency benefits.
+
+![Warning](/images/warning_icon_32px.png ) **Warning**: Suggesting that the specific setting may not be optimal and is worth review for potential changes. 
+
+![Critical](/images/critical_icon_32px.png) **Critical**: Demonstrates that the specific setting is not providing the best availability or resiliency benefits and should be reviewed.
+
 ## Common Terms
 
 ### Resource
