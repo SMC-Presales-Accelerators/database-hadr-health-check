@@ -8,6 +8,8 @@ configurations that best align with your organizations SLA goals.
 
 ### Example Outputs
 
+View the definitions page [here](/docs/definitions.md) for more details of the workbook output.
+
 **Azure SQL Database**
 ![Azure SQL Database](./images/health_check_sql_example.png)
 
